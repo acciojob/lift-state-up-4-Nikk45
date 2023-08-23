@@ -6,7 +6,6 @@ const Child = ({cartItems,removeItem})=>{
         <>
         <h1>Child Component</h1>
         <div className="child">
-            <ul>
             {
                 // cartItems===[] && <li>hey</li>
                 cartItems.map((item)=>{
@@ -14,7 +13,6 @@ const Child = ({cartItems,removeItem})=>{
                     <button onClick={()=>{removeItem(item.id)}}> Remove</button></li>
                 })
             }
-            </ul>
         </div>
         </>
     )
