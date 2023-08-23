@@ -4,8 +4,8 @@ const Child = ({cartItems,removeItem})=>{
 
     return(
         <>
-        <h1>Child Component</h1>
         <div className="child">
+        <h1>Child Component</h1>
             {
                 // cartItems===[] && <li>hey</li>
                 cartItems.map((item)=>{
