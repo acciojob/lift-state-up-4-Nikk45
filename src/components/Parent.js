@@ -23,7 +23,7 @@ const Parent = ()=>{
     console.log(cartItems);
 
     return(
-        <>
+        <div className="parent">
             <h1>Parent Component</h1>
 
             <label>Item Name</label>
@@ -32,10 +32,10 @@ const Parent = ()=>{
             <label>Item Price</label>
             <input type="number" placeholder="Item Price" id="itemPrice" 
             onChange={(e) => {setItemPrice(e.target.value)}} value={itemPrice}/>
-            <button onClick={addItem}>ADD ITEM</button>
+            <button onClick={addItem}>Add Item</button>
 
             <Child cartItems={cartItems} removeItem={removeItem}/>
-        </>
+        </div>
     )
 
 }

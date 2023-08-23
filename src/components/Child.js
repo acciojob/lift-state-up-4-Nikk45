@@ -3,7 +3,7 @@ import React from "react";
 const Child = ({cartItems,removeItem})=>{
 
     return(
-        <>
+        <div className="child">
             <h1>Child Component</h1>
             <ul>
             {
@@ -14,7 +14,7 @@ const Child = ({cartItems,removeItem})=>{
                 })
             }
             </ul>
-        </>
+        </div>
     )
 }
 
