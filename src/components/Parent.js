@@ -15,7 +15,7 @@ const Parent = ()=>{
 
     const removeItem = (id)=>{
         console.log('item removed');
-        return setCartItems(
+        setCartItems(
             cartItems.filter((item)=>item.id !== id)
         )
     }
