@@ -4,7 +4,7 @@ const Child = ({cartItems,removeItem})=>{
 
     return(
         <>
-        <div className="child">
+        <div className="child-container">
         <h1>Child Component</h1>
             <div className="child">
             {
